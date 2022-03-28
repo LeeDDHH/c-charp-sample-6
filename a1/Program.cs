@@ -11,10 +11,8 @@ namespace a1
             a.Add(1);
             a.Insert(1, 4);
 
-            int index = -1;
-            foreach (int i in a) {
-                index++;
-                Console.WriteLine($"a[{index}]={i}");
+            for (int i = 0; i < a.Count; i++) {
+                Console.WriteLine($"a[{i}]={a[i]}");
             }
         }
     }
